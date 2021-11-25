@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(e){
+    $("button").click(function(e){
+		$("h1").hide();
+	});
+});
+</script>
+<title>Empresa</title>
+<script src="Script/operacion.js">
+</script>
+</head>
+<style type="text/css"/>
+.Titulo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body
+{
+	background-image:url(4-46018_blue-wallpaper-hd-light-blue-abstract-wallpaper-hd.jpg);
+}
+</style>
+<body>
+<h1 align="center" class="Titulo"><em>Empresa de transporte</em></h1>
+<table align="center" cellspacing="5" cellpadding="5" border="10">
+  <col width="95" />
+  <col width="80" />
+  <col width="117" />
+  <col width="80" span="4" />
+  <tr>
+    <td align="center" colspan="7" width="611">Transporte    de:</td>
+  </tr>
+  <tr>
+    <td colspan="2">Carga</td>
+    <td colspan="2">Pasajeros</td>
+    <td colspan="2">Encomiendas</td>
+    <td>Animales</td>
+  </tr>
+  <tr>
+    <td>Agroindustrial</td>
+    <td align="right">3.1</td>
+    <td>Lima-Ica</td>
+    <td align="right">2</td>
+    <td>Sobres</td>
+    <td align="right">5</td>
+    <td align="right">25</td>
+  </tr>
+  <tr>
+    <td>Metales</td>
+    <td align="right">2.75</td>
+    <td>Ica-Nazca</td>
+    <td align="right">2</td>
+    <td>Paquetes</td>
+    <td align="right">12</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Madera</td>
+    <td align="right">3.05</td>
+    <td>Nazca-Ayacucho</td>
+    <td align="right">2</td>
+    <td>Bultos</td>
+    <td align="right">7</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">1</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">0</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">1</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<form id="formulario" name="" >
+  <div align="center">
+    <table width="738" height="88" border="0">
+      <tr>
+        <td width="117" height="26">Carga
+        <label>
+          <select name="Carga" id="Carga">
+            <option>Agroindustrial</option>
+            <option>Metales</option>
+            <option>Madera</option>
+          </select>
+        </label></td>
+        <td width="117" height="26">Pasajero
+        <label>
+          <select name="Pasaje" id="Pasaje">
+            <option>Lima-Ica</option>
+            <option>Ica-Nazca</option>
+            <option>Nazca-Ayacucho</option>
+          </select>
+        </label></td>
+        <td width="117" height="26">Encomiendas
+          <label>
+          <select name="Encomienda" id="Carga">
+            <option>Sobres</option>
+            <option>Paquetes</option>
+            <option>Bultos</option>
+          </select>
+        </label></td>
+        
+        <td width="78"></td>
+        <td width="158"></td>
+        <td width="104">&nbsp;</td>
+        <td width="103"><button onclick="limpiar();"><strong> Limpiar</strong></button></td>
+      </tr>
+      <tr>
+      <td width="117" height="26">Peso:</td>
+      <td width="152"><input type="text" name="tipo" id="tipo" autofocus="autofocus" placeholder="Escribe el peso" /></td></td>
+       <td width="117" height="26">Pasajeros:</td>
+      <td width="152"><input type="text" name="tipo" id="tipo" autofocus="autofocus" placeholder="Escribe el total" /></td></td>
+       <td width="117" height="26">Encomienda:</td>
+      <td width="152"><input type="text" name="tipo" id="tipo" autofocus="autofocus" placeholder="Escribe el total" /></td></td>
+       <td width="117" height="26">Animales:</td>
+      <td width="152"><input type="text" name="tipo" id="tipo" autofocus="autofocus" placeholder="Escribe la canitdad" /></td></td>
+        <td></td>
+        <td>&nbsp;</td> 
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="26">&nbsp;</td>
+        <td><button type="button" onclick="carga();"><strong>Calcular</strong></button></td>
+        
+        <td><button type="button" onclick="pasajeros();"><strong>Calcular</strong></button></td>
+        
+        <td><button type="button" onclick="encomiendas();"><strong>Calcular</strong></button></td>
+        
+        <td><button type="button" onclick="animales();"><strong>Calcular</strong></button></td>
+        
+        
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+  </table>
+  </div>
+</form>
+
+</body>
+</html>
